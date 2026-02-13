@@ -1,0 +1,205 @@
+/* ----------------------------------------------
+  RESET STYLES
+--------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------------------------
+   LAYOUT
+---------------------------------------------- */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ---------------- SIDEBAR ------------------ */
+.sidebar {
+    width: 30%;
+    background-color: #6e9c9a;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 4px solid white;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+     
+.sidebar h1 {
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.sidebar h2 {
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.info h3 {
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ---------------- CONTENT ------------------ */
+.content {
+    width: 70%;
+    padding: 60%;
+    background-color: #f2f2f2;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle-icon {
+    width: 40PX;
+    height: 40PX;
+    border-radius: 50%;
+    background-color: #6e9c9a;
+}
+
+.content h2 {
+    font-size: 28pX;
+}
+
+/* --------------- PORTFOLIO GRID ------------------ */
+.portfolio-grid {
+    display: flex;
+    gap: 20pX;
+    margin-bottom: 25pX;
+    flex-wrap: wrap;
+}
+
+/* -------------- PROJECT CARDS -------------------- */
+.project-card {
+    background-color: white;
+    padding: 20pX;
+    border-radius: 8pX;
+    box-shadow: 0 4pX 8pX rgba(0,0,0,0.1);
+    flex: 1 1 45%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #6e9c9a;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #6e9c9a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5b7f7d;
+}
+
+/* ---------------- CONTACT FORM ------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15PX;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #6e9c9a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form.button:hover {
+    background-color: #5b7f7d;
+}
+
+/* --------------- FOOTER ------------------- */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ---------------- MEDIA QUERIES ------------------- */ 
+@media screen and (max-width: 900px) {
+    .container{
+        flex-direction: column;
+    }  
+    .sidebar, .content {
+        width: 100%;
+    }
+    .portfolio-grid {
+        flex-direction: column;
+    }
+    .project-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* ---------------- REFLECTION COMMENT ------------------ */
+/*
+Reflection:
+This portfolio page uses semantic HTML elements like <section>, <aside>, <main>, <footer>, <form>, and headings.
+CSS includes 4 types of selectors: class selectors (.sidebar, .content), element selectors (form, input), 
+pseudo-class selectors (a:hover, button:hover), and ID selectors (optional if needed).
+Challenges: Ensuring a responsive layout, visually appealing project cards, and readable About section.
+Next Phase: Add animations, dynamic JavaScript features, and multi-page navigation.
+*/
+
